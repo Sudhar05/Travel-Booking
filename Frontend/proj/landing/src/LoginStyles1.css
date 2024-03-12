@@ -1,0 +1,183 @@
+@import url('https://fonts.googlepis.com/css2?family-Poppins:wght@300;400;500;600;7000;800;900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+} */
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 60%;
+    align-items: center ;
+    margin-top:100px;
+    margin-left: 450px;
+}
+
+.login-box::before,
+.login-box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 300px;
+    height: 420px;
+    z-index: 1;
+}
+
+.login-box::before {
+    background: linear-gradient(0deg, transparent, transparent, #44d62c, #44d62c, #f5f10a);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.login-box::after {
+    background: linear-gradient(0deg, transparent, transparent, #f5f10a, #f5f10a, #44d62c);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login-box .login-form {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.login-box .login-form .login-heading {
+    color: #44d62c;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: -15px;
+}
+
+.login-box .login-form .login-inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 28px;
+}
+
+.login-box .login-form .login-inputBox .login-input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.login-box .login-form .login-inputBox .login-label {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.login-box .login-form .login-inputBox .login-input:valid~.login-label,
+.login-box .login-form .login-inputBox .login-input:focus~.login-label {
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.login-box .login-form .login-inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background: #eceaea;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.login-box .login-form .login-inputBox .login-input:valid~i,
+.login-box .login-form .login-inputBox .login-input:focus~i {
+    height: 44px;
+}
+
+.login-box .login-form .login-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.login-box .login-form .login-links  a {
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    z-index: 2; /* Ensure links are above other elements */
+}
+
+.login-box .login-form .login-links a:hover {
+    color: #fff;
+}
+
+
+
+.login-submitButton {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background: #1be91b;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 35px; 
+    margin-left: 100px;
+    text-align: center;
+}
+body{
+    background-color: #000;
+  }
+  .login-submitButton{
+    color: white;
+  }

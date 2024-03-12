@@ -1,0 +1,124 @@
+body{
+  background-color: #000;
+}
+.home-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 50px; 
+    background-color: rgb(45, 45, 45); 
+    color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.home-company-name {
+  color: #44d62c;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px; /* Adjust margin for company name */
+  text-shadow: 2px 2px 4px rgb(98, 96, 96);
+  margin-top: -37px;
+  font-weight: 500;
+}
+
+.home-logo {
+  height: 40px; 
+  margin-top: 5px;
+  margin-left: 3px; /* Adjust margin for logo */
+}
+
+.home-nav-items {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Align nav items to the right */
+  margin-left: 600px; /* Add margin to the right */
+  margin-top: -23px;
+}
+
+.home-nav-items li {
+  margin-right: 5px; /* Adjust spacing between nav items */
+}
+
+.home-nav-link  {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, font-size 0.3s ease; 
+}
+
+.home-nav-link1 {
+  color: #44d62c;
+  text-decoration: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, font-size 0.3s ease; 
+}
+
+.home-nav-link:hover {
+  background-color: #44d62c;
+    color: black;
+    text-shadow: 0 0 10px #fff;
+    padding: 6px 10px; 
+    font-size: 1.2em; 
+    color: #000;
+}
+/* Home.css */
+
+.carousel-container {
+  width: 100%; 
+  height: 480px; 
+  position: fixed; /* Fix the carousel at the top of the page */
+  top: 52px; /* Adjust top position to accommodate the navbar */
+  left: 0;
+  right: 0;
+  z-index: 100; /* Ensure the carousel is above other content */
+}
+
+.slick-slider {
+  width: 100%; /* Ensure the slider spans the entire width */
+  height: 100%; /* Ensure the slider fills the container */
+}
+
+.slick-slide img {
+  width: 100%; /* Ensure the images fit perfectly within the slider */
+  height: 460px; /* Ensure the images fill the container */
+  object-fit: cover; /* Maintain aspect ratio and cover entire area */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure the navigation arrows are above the images */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px; /* Adjust arrow size as needed */
+  color: #000; /* Change arrow color */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Adjust dot position from the bottom */
+  width: 100%;
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px; /* Adjust dot margin as needed */
+}
+
+.slick-dots li button {
+  font-size: 12px; /* Adjust dot size as needed */
+  border: 1px solid #000; /* Change dot border color */
+  background-color: transparent; /* Make dots transparent */
+  width: 10px; /* Adjust dot width */
+  height: 10px; /* Adjust dot height */
+  border-radius: 50%; /* Make dots circular */
+}
+
+.slick-dots li.slick-active button {
+  background-color: #000; /* Change active dot background color */
+}
