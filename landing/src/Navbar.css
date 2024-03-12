@@ -1,0 +1,39 @@
+.forest-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 100%; 
+  height: 50px; 
+  background-color: black; 
+  color: white; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2; 
+}
+
+.forest-navbar-container {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  height: 100%; 
+}
+
+.forest-navbar-item {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 12px; 
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease, font-size 0.3s ease; 
+}
+
+.forest-navbar-item:hover {
+  background-color: #44d62c;
+  color: black;
+  text-shadow: 0 0 10px #fff;
+  padding: 6px 10px; 
+  font-size: 1.2em; 
+}
+
+.forest-navbar-item .tree-link {
+  color: white;
+}
